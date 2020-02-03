@@ -103,14 +103,14 @@ namespace EU
                 }
                 evenkentiBelepokSzama.Add(ev, ++db);
             }
-            Console.WriteLine("8.feladat: Statisztika: ");
-            sw.WriteLine("8.feladat: Statisztika: ");
 
             using (StreamWriter sw = new StreamWriter("kiiras.txt", false Encoding.UTF8))
+                Console.WriteLine("8.feladat: Statisztika: ");
+                sw.WriteLine("8.feladat: Statisztika: ");
             foreach (KeyValuePair<int, int> item in evenkentiBelepokSzama)
-            {
-                Console.WriteLine($"\t{item.Key} - {item.Value} ország");
-                sw.WriteLine($"\t{item.Key} - {item.Value} ország");
+                {
+                    Console.WriteLine($"\t{item.Key} - {item.Value} ország");
+                    sw.WriteLine($"\t{item.Key} - {item.Value} ország");
 
                 }
 
